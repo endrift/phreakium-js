@@ -67,7 +67,7 @@ Mode2 = {
 };
 </script>
 <body>
-<form onsubmit="var v = document.getElementById('mode1').selectedOptions[0].value; Mode1.play(parseInt(v, 16)); return false">
+<form onsubmit="Mode1.play(parseInt(this['mode1'].value, 16)); return false">
 <select id="mode1">
 <option value="00">Normalium-Z</option>
 <option value="01">Firium-Z</option>
@@ -137,7 +137,7 @@ Mode2 = {
 <input type="submit" value="Mode 1">
 </form>
 
-<form onsubmit="var v = document.getElementById('mode2').selectedOptions[0].value; Mode2.play(parseInt(v, 16)); return false">
+<form onsubmit="Mode2.play(parseInt(this['mode2'].value, 16)); return false">
 <select id="mode2">
 <option value="000">Normalium-Z</option>
 <option value="001">Firium-Z</option>
