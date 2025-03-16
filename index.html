@@ -68,6 +68,7 @@ Mode2 = {
 </script>
 <body>
 <form onsubmit="Mode1.play(parseInt(this['mode1'].value, 16)); return false">
+<label for='mode1'>Sun and Moon style</label><br>
 <select id="mode1">
 <option value="00">Normalium-Z</option>
 <option value="01">Firium-Z</option>
@@ -134,10 +135,11 @@ Mode2 = {
 <option value="3E">3E</option>
 <option value="3F">3F (no response)</option>
 </select>
-<input type="submit" value="Mode 1">
+<input type="submit" value="Play">
 </form>
 
 <form onsubmit="Mode2.play(parseInt(this['mode2'].value, 16)); return false">
+<label for='mode1'>Audio CD style</label><br>
 <select id="mode2">
 <option value="000">Normalium-Z</option>
 <option value="001">Firium-Z</option>
@@ -652,5 +654,5 @@ Mode2 = {
 <option value="1FE">1FE (no response)</option>
 <option value="1FF">1FF (no response)</option>
 </select>
-<input type="submit" value="Mode 2">
+<input type="submit" value="Play">
 </form>
