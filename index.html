@@ -65,6 +65,18 @@ Mode2 = {
 	PAUSE: 0.02,
 	BITS: 9
 };
+
+Mode3 = {
+	play: Mode.play,
+
+	KEY: 5000,
+	NOTE: [[5750, 5250], [6000, 5500]],
+
+	DURATION_KEY: 0.04,
+	DURATION: 0.02,
+	PAUSE: 0,
+	BITS: 7
+};
 </script>
 <body>
 <form onsubmit="Mode1.play(parseInt(this['mode1'].value, 16)); return false">
